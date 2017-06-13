@@ -58,7 +58,7 @@
 /**
  The set of states that have been added to the receiver. Each instance of the set is a `TKState` object.
  */
-@property (nonatomic, readonly) NSSet *states;
+@property (nonatomic, readonly) NSSet<TKState *> *states;
 
 /**
  The initial state of the receiver.
@@ -97,7 +97,7 @@
  
  @param arrayOfStates An array of `TKState` objects to be added to the receiver.
  */
-- (void)addStates:(NSArray *)arrayOfStates;
+- (void)addStates:(NSArray<TKState *> *)arrayOfStates;
 
 /**
  Retrieves the state with the given name from the receiver.
@@ -126,7 +126,7 @@
 /**
  The set of events that have been added to the receiver. Each instance of the set is a `TKEvent` object.
  */
-@property (nonatomic, readonly) NSSet *events;
+@property (nonatomic, readonly) NSSet<TKEvent *> *events;
 
 /**
  Adds an event to the receiver.
@@ -150,7 +150,7 @@
  
  @param arrayOfEvents An array of `TKEvent` objects to be added to the receiver.
  */
-- (void)addEvents:(NSArray *)arrayOfEvents;
+- (void)addEvents:(NSArray<TKEvent *> *)arrayOfEvents;
 
 /**
  Retrieves the event with the given name from the receiver.

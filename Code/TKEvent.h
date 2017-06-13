@@ -52,7 +52,7 @@
  
  If `nil`, then the event can be fired when the state machine is in any state.
  */
-@property (nonatomic, copy, readonly) NSArray *sourceStates;
+@property (nonatomic, copy, readonly) NSArray<TKState *> *sourceStates;
 
 /**
  The state that the state machine will transition into after the event has fired.
